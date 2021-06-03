@@ -1,0 +1,88 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+.contaier{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.taskContainer {
+  padding: 25px;
+  flex: 2;
+  float: left;
+  margin: auto;
+  max-width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  text-align: center;
+}
+
+.taskListContainer {
+  min-width: 240px;
+  padding: 25px;
+  flex: 1;
+  float: left;
+  width: 33.33%;
+  margin: auto;
+  max-width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  text-align: center;
+}
+
+.heading{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 3rem;
+}
+
+.heading h1 {
+  font-size:  4rem;
+}
+
+.tasks{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.btn{
+  background-color: white;
+  border-radius: 15px;
+  padding: 0.5rem;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 0 1px #21ba45 inset!important;
+  box-shadow: 0 0 0 1px #21ba45 inset!important;
+  color: #21ba45!important;
+}
+
+.btn:hover{
+  color: black!important;
+  background-color: #21ba45!important;
+  text-decoration: none; 
+
+}
+
+.overlay{
+  background: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

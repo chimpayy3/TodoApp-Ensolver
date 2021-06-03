@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mysql": "mysql -u root --password=password < ./database/db.sql",
+    "mysql": "mysql -u root --password= < ./database/db.sql",
     "dev": "concurrently \"npm start\"  \"npm run start --prefix client\"",
     "firsttime": "concurrently \"npm run mysql\" \"npm start\" \"npm run start --prefix client\""
   },
