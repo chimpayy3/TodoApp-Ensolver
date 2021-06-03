@@ -1,0 +1,102 @@
+.cardItem {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex; 
+	width: 100%;
+	padding-right: 0;
+}
+.card {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    margin-right: 0;
+    padding: 1em;
+}
+.buttons {
+    margin-top: 1em;
+	padding: 0.5rem;
+	text-decoration: none; 
+}
+.taskDesc{
+    padding-top: 0.5rem;
+}
+.update{    
+    background-color: white;
+    border-radius: 15px;
+    padding: 0.5rem;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 0 1px #21ba45 inset!important;
+    box-shadow: 0 0 0 1px #21ba45 inset!important;
+    color: #21ba45!important;
+}
+
+.delete{    
+    background-color: white;
+    border-radius: 15px;
+    padding: 0.5rem;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 0 1px #db2828 inset!important;
+    box-shadow: 0 0 0 1px #db2828 inset!important;
+    color: #db2828!important;
+}
+
+.addtoList{      
+    float: right!important;      
+    background-color: white;
+    border-radius: 3px;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 0 1px #21ba45 inset!important;
+    box-shadow: 0 0 0 1px #21ba45 inset!important;
+    color: #21ba45!important;
+}
+
+.update:hover{
+    color: black!important;
+    background-color: #21ba45!important;
+    text-decoration: none; 
+
+}
+.delete:hover{
+    color: black!important;
+	background-color: #db2828;
+	text-decoration: none; 
+}
+
+.taskName{
+    font-weight: bold;
+    text-shadow: thistle;
+}
+
+
+
+/* Custom page CSS - Desktop  */
+
+@media (min-width: 768px) {
+	.cardItem {
+		width: 33.33%;
+		padding-right: 1em; 
+	} 
+	.cardItem:nth-child(3n) {
+		padding-right: 0;
+	}
+	.card:hover {
+		cursor: pointer;
+		background-color: white;
+		box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+	}
+}
